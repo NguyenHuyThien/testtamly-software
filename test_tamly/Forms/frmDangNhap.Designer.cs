@@ -184,6 +184,7 @@ namespace test_tamly.Forms
             btnDangKy.TabIndex = 8;
             btnDangKy.Text = "Đăng ký";
             btnDangKy.UseVisualStyleBackColor = false;
+            btnDangKy.Click += btnDangKy_Click;
 
             // ----------------------------------------------------------
             // frmDangNhap : Cấu hình chung của form

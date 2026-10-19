@@ -1,0 +1,21 @@
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.cache
+*.vsidx
+*.log
+.env
+.env.local
+application_default_credentials.json
+*.json.key
+service-account*.json
+ServiceAccount*.json
+serviceaccount*.json
+api_key.txt
+# Firebase Web API Key của WinForms — không commit file thật, dùng firebase_config.json.example làm mẫu
+firebase_config.json
+.DS_Store
+Thumbs.db
+*.docx

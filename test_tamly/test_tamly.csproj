@@ -10,7 +10,14 @@
 
   <ItemGroup>
     <Folder Include="Audio\" />
-    <Folder Include="Classes\" />
+    <None Update="Classes\firebase_config.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FirebaseAuthentication.net" Version="4.1.0" />
+    <PackageReference Include="Google.Cloud.Firestore" Version="4.5.0" />
   </ItemGroup>
 
 </Project>

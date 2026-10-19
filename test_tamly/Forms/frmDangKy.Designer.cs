@@ -70,7 +70,7 @@ namespace test_tamly.Forms
             lblTieuDe.Location = new Point(0, 0);
             lblTieuDe.Name = "lblTieuDe";
             lblTieuDe.Size = new Size(440, 80);
-            lblTieuDe.TabIndex = 0;
+            lblTieuDe.TabIndex = 1;
             lblTieuDe.Text = "ĐĂNG KÝ";
             lblTieuDe.TextAlign = ContentAlignment.MiddleCenter;
             // 
@@ -82,7 +82,7 @@ namespace test_tamly.Forms
             lblHoTen.Location = new Point(59, 112);
             lblHoTen.Name = "lblHoTen";
             lblHoTen.Size = new Size(97, 23);
-            lblHoTen.TabIndex = 1;
+            lblHoTen.TabIndex = 2;
             lblHoTen.Text = "Họ tên";
             // 
             // txtHoTen
@@ -94,7 +94,7 @@ namespace test_tamly.Forms
             txtHoTen.Location = new Point(60, 140);
             txtHoTen.Name = "txtHoTen";
             txtHoTen.Size = new Size(320, 30);
-            txtHoTen.TabIndex = 0;
+            txtHoTen.TabIndex = 3;
             // 
             // lblEmail
             // 
@@ -104,7 +104,7 @@ namespace test_tamly.Forms
             lblEmail.Location = new Point(60, 196);
             lblEmail.Name = "lblEmail";
             lblEmail.Size = new Size(82, 23);
-            lblEmail.TabIndex = 2;
+            lblEmail.TabIndex = 4;
             lblEmail.Text = "Email";
             // 
             // txtEmail
@@ -116,7 +116,7 @@ namespace test_tamly.Forms
             txtEmail.Location = new Point(60, 224);
             txtEmail.Name = "txtEmail";
             txtEmail.Size = new Size(320, 30);
-            txtEmail.TabIndex = 1;
+            txtEmail.TabIndex = 5;
             // 
             // lblTenDangNhap
             // 
@@ -126,7 +126,7 @@ namespace test_tamly.Forms
             lblTenDangNhap.Location = new Point(60, 280);
             lblTenDangNhap.Name = "lblTenDangNhap";
             lblTenDangNhap.Size = new Size(192, 23);
-            lblTenDangNhap.TabIndex = 3;
+            lblTenDangNhap.TabIndex = 6;
             lblTenDangNhap.Text = "Tên đăng nhập";
             // 
             // txtTenDangNhap
@@ -138,7 +138,7 @@ namespace test_tamly.Forms
             txtTenDangNhap.Location = new Point(60, 308);
             txtTenDangNhap.Name = "txtTenDangNhap";
             txtTenDangNhap.Size = new Size(320, 30);
-            txtTenDangNhap.TabIndex = 2;
+            txtTenDangNhap.TabIndex = 7;
             // 
             // lblMatKhau
             // 
@@ -148,7 +148,7 @@ namespace test_tamly.Forms
             lblMatKhau.Location = new Point(60, 364);
             lblMatKhau.Name = "lblMatKhau";
             lblMatKhau.Size = new Size(128, 23);
-            lblMatKhau.TabIndex = 4;
+            lblMatKhau.TabIndex = 8;
             lblMatKhau.Text = "Mật khẩu";
             // 
             // txtMatKhau
@@ -160,7 +160,7 @@ namespace test_tamly.Forms
             txtMatKhau.Location = new Point(60, 392);
             txtMatKhau.Name = "txtMatKhau";
             txtMatKhau.Size = new Size(320, 30);
-            txtMatKhau.TabIndex = 3;
+            txtMatKhau.TabIndex = 9;
             txtMatKhau.UseSystemPasswordChar = true;
             // 
             // lblNhapLaiMatKhau
@@ -171,7 +171,7 @@ namespace test_tamly.Forms
             lblNhapLaiMatKhau.Location = new Point(60, 448);
             lblNhapLaiMatKhau.Name = "lblNhapLaiMatKhau";
             lblNhapLaiMatKhau.Size = new Size(234, 23);
-            lblNhapLaiMatKhau.TabIndex = 5;
+            lblNhapLaiMatKhau.TabIndex = 10;
             lblNhapLaiMatKhau.Text = "Nhập lại mật khẩu";
             // 
             // txtNhapLaiMatKhau
@@ -183,7 +183,7 @@ namespace test_tamly.Forms
             txtNhapLaiMatKhau.Location = new Point(60, 476);
             txtNhapLaiMatKhau.Name = "txtNhapLaiMatKhau";
             txtNhapLaiMatKhau.Size = new Size(320, 30);
-            txtNhapLaiMatKhau.TabIndex = 4;
+            txtNhapLaiMatKhau.TabIndex = 11;
             txtNhapLaiMatKhau.UseSystemPasswordChar = true;
             // 
             // chkHienMatKhau
@@ -194,7 +194,7 @@ namespace test_tamly.Forms
             chkHienMatKhau.Location = new Point(62, 520);
             chkHienMatKhau.Name = "chkHienMatKhau";
             chkHienMatKhau.Size = new Size(203, 36);
-            chkHienMatKhau.TabIndex = 5;
+            chkHienMatKhau.TabIndex = 12;
             chkHienMatKhau.Text = "Hiện mật khẩu";
             chkHienMatKhau.UseVisualStyleBackColor = true;
             chkHienMatKhau.CheckedChanged += chkHienMatKhau_CheckedChanged;
@@ -210,9 +210,10 @@ namespace test_tamly.Forms
             btnDangKy.Location = new Point(60, 556);
             btnDangKy.Name = "btnDangKy";
             btnDangKy.Size = new Size(320, 44);
-            btnDangKy.TabIndex = 6;
+            btnDangKy.TabIndex = 13;
             btnDangKy.Text = "ĐĂNG KÝ";
             btnDangKy.UseVisualStyleBackColor = false;
+            btnDangKy.Click += btnDangKy_Click;
             // 
             // btnQuayLai
             // 
@@ -225,7 +226,7 @@ namespace test_tamly.Forms
             btnQuayLai.Dock = DockStyle.Left;
             btnQuayLai.Name = "btnQuayLai";
             btnQuayLai.Size = new Size(100, 80);
-            btnQuayLai.TabIndex = 7;
+            btnQuayLai.TabIndex = 0;
             btnQuayLai.Text = "< Quay lại";
             btnQuayLai.UseVisualStyleBackColor = false;
             btnQuayLai.Click += btnQuayLai_Click;

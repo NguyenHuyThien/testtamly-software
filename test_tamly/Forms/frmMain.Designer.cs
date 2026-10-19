@@ -136,13 +136,8 @@ namespace test_tamly.Forms
             lblTieuDe.TextAlign = ContentAlignment.MiddleCenter;
 
             // ----------------------------------------------------------
-            // pnlTaiKhoan : Khu vực chứa các nút tài khoản
+            // Khu vực tài khoản đã bị lược bỏ nhóm
             // ----------------------------------------------------------
-            pnlTaiKhoan = new Panel();
-            pnlTaiKhoan.Location = new Point(250, 100);
-            pnlTaiKhoan.Name = "pnlTaiKhoan";
-            pnlTaiKhoan.Size = new Size(400, 55);
-            pnlTaiKhoan.TabIndex = 2;
 
             // ----------------------------------------------------------
             // btnDangNhap : Nút "Đăng nhập" (hiển thị khi chưa đăng nhập)
@@ -154,9 +149,9 @@ namespace test_tamly.Forms
             btnDangNhap.FlatStyle = FlatStyle.Flat;
             btnDangNhap.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnDangNhap.ForeColor = Color.White;
-            btnDangNhap.Location = new Point(0, 0);
+            btnDangNhap.Location = new Point(250, 100);
             btnDangNhap.Name = "btnDangNhap";
-            btnDangNhap.Size = new Size(190, 55);
+            btnDangNhap.Size = new Size(400, 55);
             btnDangNhap.TabIndex = 0;
             btnDangNhap.Text = "Đăng nhập";
             btnDangNhap.UseVisualStyleBackColor = false;
@@ -172,9 +167,9 @@ namespace test_tamly.Forms
             btnDangKy.FlatStyle = FlatStyle.Flat;
             btnDangKy.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnDangKy.ForeColor = Color.White;
-            btnDangKy.Location = new Point(210, 0);
+            btnDangKy.Location = new Point(250, 165);
             btnDangKy.Name = "btnDangKy";
-            btnDangKy.Size = new Size(190, 55);
+            btnDangKy.Size = new Size(400, 55);
             btnDangKy.TabIndex = 1;
             btnDangKy.Text = "Đăng ký";
             btnDangKy.UseVisualStyleBackColor = false;
@@ -191,7 +186,7 @@ namespace test_tamly.Forms
             btnThongTinCaNhan.FlatStyle = FlatStyle.Flat;
             btnThongTinCaNhan.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnThongTinCaNhan.ForeColor = Color.White;
-            btnThongTinCaNhan.Location = new Point(0, 0);
+            btnThongTinCaNhan.Location = new Point(250, 100);
             btnThongTinCaNhan.Name = "btnThongTinCaNhan";
             btnThongTinCaNhan.Size = new Size(400, 55);
             btnThongTinCaNhan.TabIndex = 2;
@@ -200,12 +195,7 @@ namespace test_tamly.Forms
             btnThongTinCaNhan.Visible = false;
             btnThongTinCaNhan.Click += btnThongTinCaNhan_Click;
 
-            // ----------------------------------------------------------
-            // pnlTaiKhoan : Thêm các nút vào panel
-            // ----------------------------------------------------------
-            pnlTaiKhoan.Controls.Add(btnDangNhap);
-            pnlTaiKhoan.Controls.Add(btnDangKy);
-            pnlTaiKhoan.Controls.Add(btnThongTinCaNhan);
+            // Add buttons directly to the form instead
 
             // ----------------------------------------------------------
             // lblDanhSachTest : Tiêu đề "CÁC BÀI TEST"
@@ -213,7 +203,7 @@ namespace test_tamly.Forms
             lblDanhSachTest = new Label();
             lblDanhSachTest.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
             lblDanhSachTest.ForeColor = mauChu;
-            lblDanhSachTest.Location = new Point(150, 170);
+            lblDanhSachTest.Location = new Point(150, 235);
             lblDanhSachTest.Name = "lblDanhSachTest";
             lblDanhSachTest.Size = new Size(600, 40);
             lblDanhSachTest.TabIndex = 3;
@@ -229,7 +219,7 @@ namespace test_tamly.Forms
             pnlDanhSachTest.AutoScroll = true;
             pnlDanhSachTest.BackColor = Color.White;
             pnlDanhSachTest.BorderStyle = BorderStyle.FixedSingle;
-            pnlDanhSachTest.Location = new Point(150, 210);
+            pnlDanhSachTest.Location = new Point(150, 275);
             pnlDanhSachTest.Name = "pnlDanhSachTest";
             pnlDanhSachTest.Size = new Size(600, 300);
             pnlDanhSachTest.TabIndex = 4;
@@ -244,7 +234,7 @@ namespace test_tamly.Forms
             btnXemKetQua.FlatStyle = FlatStyle.Flat;
             btnXemKetQua.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnXemKetQua.ForeColor = Color.White;
-            btnXemKetQua.Location = new Point(250, 525);
+            btnXemKetQua.Location = new Point(250, 590);
             btnXemKetQua.Name = "btnXemKetQua";
             btnXemKetQua.Size = new Size(400, 55);
             btnXemKetQua.TabIndex = 5;
@@ -262,7 +252,7 @@ namespace test_tamly.Forms
             btnThoat.FlatStyle = FlatStyle.Flat;
             btnThoat.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             btnThoat.ForeColor = Color.White;
-            btnThoat.Location = new Point(250, 595);
+            btnThoat.Location = new Point(250, 660);
             btnThoat.Name = "btnThoat";
             btnThoat.Size = new Size(400, 55);
             btnThoat.TabIndex = 6;
@@ -276,14 +266,16 @@ namespace test_tamly.Forms
             Controls.Add(btnThoat);
             Controls.Add(menuMain);
             Controls.Add(lblTieuDe);
-            Controls.Add(pnlTaiKhoan);
+            Controls.Add(btnDangNhap);
+            Controls.Add(btnDangKy);
+            Controls.Add(btnThongTinCaNhan);
             Controls.Add(lblDanhSachTest);
             Controls.Add(pnlDanhSachTest);
             Controls.Add(btnXemKetQua);
 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = mauNen;
-            ClientSize = new Size(900, 680);
+            ClientSize = new Size(900, 745);
             Font = new Font("Segoe UI", 10F);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MainMenuStrip = menuMain;
@@ -315,7 +307,6 @@ namespace test_tamly.Forms
         private ToolStripMenuItem mnuTaiKhoan;
         private ToolStripMenuItem mnuDangXuat;
         private Label lblTieuDe;
-        private Panel pnlTaiKhoan;
         private Button btnDangNhap;
         private Button btnDangKy;
         private Button btnThongTinCaNhan;

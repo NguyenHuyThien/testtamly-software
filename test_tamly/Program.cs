@@ -1,7 +1,7 @@
 using test_tamly.Forms;
 namespace test_tamly
 {
-    internal static class Program
+    internal static class   Program
     {
         /// <summary>
         ///  The main entry point for the application.
